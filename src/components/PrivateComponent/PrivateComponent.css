@@ -1,0 +1,28 @@
+.layout-container {
+    display: flex;
+    position: relative;
+  }
+  
+  .sidebar-container {
+    width: 250px; /* Adjust the width of your sidebar */
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+    position: fixed; /* Fixed position to keep it in place */
+    height: 100vh; /* Full height of the viewport */
+    overflow: auto; /* Enable scrolling for the sidebar */
+    z-index: 1; /* Ensure sidebar is above other content */
+  }
+  
+  .content-container {
+    flex-grow: 1;
+    overflow: auto;
+    padding-left: 250px; /* Adjust the padding based on the sidebar width */
+    position: relative;
+  }
+  
+  /* Add any other styles as needed */
+  
+  /* Example styles for the sidebar */
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+  }
